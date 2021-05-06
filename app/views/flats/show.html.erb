@@ -1,0 +1,37 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     <h4><%= link_to "Home", flats_path %></h4>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="navbar-content">
+          <%= link_to "New flat", new_flat_path %>
+        </div>
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <div class="card">
+       <img src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/pass/GoogleMapTA.jpg" alt="Avatar"class="map">
+    </div>
+    <div class="card">
+          <h3><%= @flat.name %>
+          <p>Address: <%= @flat.address %></p>
+            <small class="bottom">
+            <%= link_to "❌ ",
+            flat_path(@flat),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
+            <%= link_to "✏️", edit_flat_path(@flat) %>
+        </small>
+        </h3>
+    </div>
+    <div class="card">
+      <h4>A bit more about this flat...</h4>
+      <p>Description:<%= @flat.description %></p>
+    </div>
+    <div class="card">
+      <p>Price /night: <%= @flat.price_per_night %></p>
+      <p>Max number of guests: <%= @flat.number_of_guests %></p>
+  </div>
+</div>

@@ -1,0 +1,131 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap/scss/bootstrap";
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 5px;
+  color: #333333;
+  background-color: #fff;
+}
+
+
+.card-flat {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: #2B2D42;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card-flat:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.flat-container {
+  padding: 2px 16px;
+}
+
+.flat-container {
+  padding-top: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  display: grid;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.form-button input {
+  background: #2B2D42;
+  color: #EDF2F4;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.navbar {
+  background: #2B2D42;
+  padding-bottom:  10px;
+}
+
+.form-design {
+  display: block;
+  margin-left: 100px;
+  padding : 20px;
+}
+
+.form-title, .form-content, h5 {
+  font-size: 20px;
+
+}
+
+.flatcontent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flatcontentbottom {
+  display: flex;
+  justify-content: center;
+  background-color: #EDF2F4;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.flat{
+  padding-top: 30px;
+  margin-left: -10px;
+}
+
+.navbar-content a {
+   color: #2B2D42;
+   padding: 10px;
+   border-radius: 5px;
+   background-color: #EDF2F4;
+}
+
+
+#article_title, #article_content{
+  width: 300px;
+}
+
+.content, .bottom{
+  padding: 20px;
+}
+
+
+.flat a {
+  color: #2B2D42;
+}
+
+.navbar-header h5 {
+  padding-top: 5px;
+}
+
+.flat-heading a, .mb-0, .flatcontent span, .navbar-header a, .flat-heading{
+  color: #EDF2F4;
+}
+
+.map {
+  width: 100%;
+  height: auto;
+}
+
+

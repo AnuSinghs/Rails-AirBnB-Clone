@@ -1,0 +1,28 @@
+<div class="form-container">
+  <%= simple_form_for(@flat) do |f| %>
+    <div class="form-title">
+      <%= f.label :name %><br>
+      <%= f.text_field :name %><br><br>
+    </div>
+    <div class="form-content">
+      <%= f.label :address %><br>
+     <%= f.text_field :address%><br><br>
+    </div>
+    <div class="form-content">
+      <%= f.label :description %><br>
+     <%= f.text_field :description%><br><br>
+    </div>
+    <div class="form-content">
+      <%= f.label :price_per_night %><br>
+     <%= f.text_field :price_per_night%><br><br>
+    </div>
+     <div class="form-content">
+      <%= f.label :number_of_guests %><br>
+     <%= f.text_field :number_of_guests%><br><br>
+    </div>
+    <div class="form-button">
+      <%= f.submit %>
+  </div>
+  <% end %>
+</div>
+
